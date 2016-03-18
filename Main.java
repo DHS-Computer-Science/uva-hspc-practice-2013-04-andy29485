@@ -2,10 +2,10 @@
 //2016-03-17
 //Practice 2013 - 04: Morse Code
 
-import java.util.*
+import java.util.*;
 
 public class Main {
-  Map<String,String> = MORSE_MAP = new HashMap<String,String>() {{
+  Map<String,String> MORSE_MAP = new HashMap<String,String>() {{
     put(".-",   "A");
     put("-...", "B");
     put("-.-.", "C");
@@ -29,7 +29,7 @@ public class Main {
     put("..-",  "U");
     put("...-", "V");
     put(".--",  "W");
-    put("-..-", "X")
+    put("-..-", "X");
     put("-.--", "Y");
     put("--..", "Z");
   }};
