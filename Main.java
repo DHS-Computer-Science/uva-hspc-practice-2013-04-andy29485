@@ -5,11 +5,11 @@
 import java.util.*;
 
 public class Main {
-  Map<String,String> MORSE_MAP = new HashMap<String,String>() {{
+  static Map<String,String> MORSE_MAP = new HashMap<String,String>() {{
     put(".-",   "A");
     put("-...", "B");
     put("-.-.", "C");
-    put("..-",  "D");
+    put("-..",  "D");
     put(".",    "E");
     put("..-.", "F");
     put("--.",  "G");
@@ -39,6 +39,7 @@ public class Main {
     int nCases = scan.nextInt();
 
     for(int i=0; i<nCases; i++) {
+      System.out.printf("Case %d: ", i+1);
       String[] codes = scan.nextLine().split("\\s+");
       for(String code : codes) {
         System.out.print(MORSE_MAP.get(code));
