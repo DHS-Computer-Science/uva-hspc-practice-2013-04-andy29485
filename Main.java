@@ -36,7 +36,7 @@ public class Main {
 
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
-    int nCases = scan.nextInt();
+    int nCases = scan.nextInt(); scan.nextLine();
 
     for(int i=0; i<nCases; i++) {
       System.out.printf("Case %d: ", i+1);
